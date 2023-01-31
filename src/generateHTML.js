@@ -1,3 +1,5 @@
+const Employee = require("../lib/Employee");
+
 function generateHTML(team){
     return`
 <!DOCTYPE html>
@@ -9,9 +11,9 @@ function generateHTML(team){
     <title>Document</title>
 </head>
 <body>
-    
+    ${team}
 </body>
-<script src="./index.js"></script>
+<script src="/index.js"></script>
 </html>
 `;
 }

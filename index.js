@@ -90,6 +90,8 @@ async function callInquirers() {
             htmlPage = generateHTML(team);
             fs.writeFile('./dist/index.html', htmlPage, (err) =>
             err ? console.log(err) : console.log('A webpage with your teams information has been created'))
+            console.log("Here is your final team:");
+            console.log(team);
                 // for (var i = 0; i < team.length; i++){
                 
                 //     var employeeCard = document.createElement('card');
@@ -107,6 +109,8 @@ async function callInquirers() {
                 //     employeeCard.appendChild(employeeID);
             
                 //     document.body.appendChild(employeeCard);
+
+                //     module.exports = employeeCard;
                 // }
         }
     })
